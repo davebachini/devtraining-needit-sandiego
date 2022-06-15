@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Leaves" max_length="40" name="x_58872_needit_leaves" type="collection">
+        <element display="true" label="LeaveDate" max_length="40" name="leavedate" type="glide_date"/>
+    </element>
+</database>
