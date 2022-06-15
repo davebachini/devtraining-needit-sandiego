@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Leaves" max_length="40" name="x_58872_needit_leaves" type="collection">
-        <element display="true" label="LeaveDate" max_length="40" name="leavedate" type="glide_date"/>
+        <element display="true" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="LeaveDate" max_length="40" name="leavedate" type="glide_date"/>
+        <element choice="3" default="1" label="State" max_length="40" name="state" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Awaiting Approval" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Closed Complete" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="5" value="5"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
     </element>
 </database>
