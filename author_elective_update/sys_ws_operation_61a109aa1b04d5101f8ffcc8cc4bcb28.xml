@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>ni_insertLeave</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	
+	var gr = new GlideRecord('x_58872_needit_leaves');
+	gr.initialize();
+	gr.setValue('leavedate', '2022-06-17');
+	gr.setValue('number', '11188');
+	gr.insert();
+	
+	response.body = {
+		"body": "test"
+	};
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_58872_needit/v2/needit_api/ni_insertLeave</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/ni_insertLeave</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-15 15:06:55</sys_created_on>
+        <sys_id>61a109aa1b04d5101f8ffcc8cc4bcb28</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ni_insertLeave</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ws_operation_61a109aa1b04d5101f8ffcc8cc4bcb28</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-15 15:21:16</sys_updated_on>
+        <web_service_definition display_value="NeedIt API">1780593d1b4815101f8ffcc8cc4bcbca</web_service_definition>
+        <web_service_version display_value="v2">8a483b021b4095101f8ffcc8cc4bcb3a</web_service_version>
+    </sys_ws_operation>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_ws_operation_61a109aa1b04d5101f8ffcc8cc4bcb28</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;
+    &lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;consumes&gt;application/json&lt;/consumes&gt;
+        &lt;consumes_customized&gt;false&lt;/consumes_customized&gt;
+        &lt;default_operation_uri/&gt;
+        &lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;
+        &lt;http_method&gt;POST&lt;/http_method&gt;
+        &lt;name&gt;ni_insertLeave&lt;/name&gt;
+        &lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	
+	var gr = new GlideRecord('x_58872_needit_leaves');
+	gr.initialize();
+	gr.setValue('leavedate', '2022-06-17');
+	gr.setValue('number', '11188');
+	gr.insert();
+	
+	response.body = {
+		"body": "test"
+	};
+
+})(request, response);]]&gt;&lt;/operation_script&gt;
+        &lt;operation_uri&gt;/api/x_58872_needit/v2/needit_api/ni_insertLeave&lt;/operation_uri&gt;
+        &lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;
+        &lt;produces_customized&gt;false&lt;/produces_customized&gt;
+        &lt;relative_path&gt;/ni_insertLeave&lt;/relative_path&gt;
+        &lt;request_example/&gt;
+        &lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;
+        &lt;requires_authentication&gt;true&lt;/requires_authentication&gt;
+        &lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;
+        &lt;short_description/&gt;
+        &lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2022-06-15 15:06:55&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;61a109aa1b04d5101f8ffcc8cc4bcb28&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;ni_insertLeave&lt;/sys_name&gt;
+        &lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_ws_operation_61a109aa1b04d5101f8ffcc8cc4bcb28&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2022-06-15 15:21:16&lt;/sys_updated_on&gt;
+        &lt;web_service_definition display_value="NeedIt API"&gt;1780593d1b4815101f8ffcc8cc4bcbca&lt;/web_service_definition&gt;
+        &lt;web_service_version display_value="v2"&gt;8a483b021b4095101f8ffcc8cc4bcb3a&lt;/web_service_version&gt;
+    &lt;/sys_ws_operation&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1656503972</payload_hash>
+        <record_name>ni_insertLeave</record_name>
+        <reverted_from/>
+        <source>86138b2e1bc8d5101f8ffcc8cc4bcb78</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 00:31:58</sys_created_on>
+        <sys_id>da33c36e1bc8d5101f8ffcc8cc4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18169ec8b560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 00:31:58</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>1a33c36e95c8d5107619680481f0f8b2</update_guid>
+        <update_guid_history>1a33c36e95c8d5107619680481f0f8b2:0,ff80876ab8c8d510847fcb305eb2075c:-57770943,5b258d6e6404d51055e09322be9960cd:1624096272,bef4cdeae004d5107fc27d8518dc8ad1:421149396,2403c9eab804d5103a4f709fd0545b02:-1958269409,71a2c5ea8d04d510d402e25e52f23ac9:1490485011,6df1c9aac204d510c6e9c87cb66f0bcd:716105706,c5e1c9aa2a04d510aef9aa3368a850c9:263109251</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 00:45:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>49265e5c4af842dc96b81b3a2bf5a044</sys_id>
+        <sys_metadata>61a109aa1b04d5101f8ffcc8cc4bcb28</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ni_insertLeave</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_61a109aa1b04d5101f8ffcc8cc4bcb28</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_61a109aa1b04d5101f8ffcc8cc4bcb28">da33c36e1bc8d5101f8ffcc8cc4bcbb2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 00:45:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
